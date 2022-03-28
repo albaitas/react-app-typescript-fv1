@@ -1,0 +1,128 @@
+body {
+  margin: 50px 0 0 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #eaf5fc;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monos;
+}
+
+.app {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.app-header {
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.app-header h1 {
+  font-size: 1.2rem;
+}
+
+.app-header h2 {
+  font-size: 1.1rem;
+  color: grey;
+}
+
+.bottom-panel {
+  margin-top: 20px;
+}
+
+.bottom-panel .new-post-label {
+  width: auto;
+  flex-grow: 1;
+  margin-right: 3px;
+}
+
+.app-list {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.app-list .list-group-item {
+  padding: 10px 15px 5px 25px;
+  margin-top: 5px;
+}
+
+.app-list-item {
+  font-size: 1.1rem;
+}
+
+.app-list-item button {
+  width: 35px;
+  height: 35px;
+  margin: 3px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.app-list-item button:focus {
+  box-shadow: none;
+  outline: none;
+}
+.app-list-item .btn-star {
+  color: #ffd700;
+}
+.app-list-item .btn-trash {
+  color: red;
+}
+.app-list-item .fa-heart {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 16px;
+  color: red;
+  transition: 0.3s all;
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+.app-list-item-label {
+  display: block;
+  line-height: 35px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.5s all;
+}
+
+.app-list-item.like .fa-heart {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.app-list-item.important .app-list-item-label {
+  color: #ffd700;
+}
+
+.app-list-item.important .btn-star {
+  color: #aeaeae;
+}
+
+.search-panel {
+  margin: 1rem 0;
+}
+
+.search-panel .search-input {
+  width: auto;
+  flex-grow: 1;
+  margin-right: 3px;
+}
+
+.bg {
+  background-color: white;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
